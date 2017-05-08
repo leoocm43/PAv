@@ -1,0 +1,14 @@
+
+#!/bin/csh
+
+
+echo 'Hola Mundo' 
+./lectura $1 
+@ a = $? + 0 
+echo $a 
+if ($a == 0) then 
+    echo 'no hubo errores' 
+    ./lectura | sort
+else
+    echo ' sí hubo errores y no debo continuar'
+endif

@@ -1,0 +1,45 @@
+Alexis González Esquivel A01333499
+Leonardo Campuzano Magallanes A01214855
+
+
+1.- Ponga un ejemplo de regla de Makefile para compilar el archivo main.c el cual depende de main.c y main.h (10 puntos)
+
+main : main.o
+gcc -o main main.o
+
+main.o: main.c main.h
+	gcc -o main.o main.c
+
+
+
+2.- ¿Qué símbolo se usa para expander un macro en un Makefile? (5 puntos) 
+
+	El símbolo de $() o ${}
+
+3.- Describa la utilidad de la función fseek(…)(5 puntos)
+
+	Sirve para mover el cursor hasta un punto en específico dentro de un archivo.
+
+4.- ¿Cuál es la diferencia entre las funciones dup(…) y dup2(…)?(10 puntos)
+
+	dup copia y regresa el descriptor numéricamente más pequeño que se encuentre disponible. Dup2 permite copiar un descriptor 		de archivo antiguo(oldfd) sobre uno nuevo(newfd).
+
+5. ¿Cuál es la diferencia entre las funciones wait(…) y waitpid(…)?(10 puntos)
+
+	Con wait() el proceso llamante se detendrá hasta que su hijo termine de ejecutarse. En cambio, con waitpid() se especifica 		a qué proceso el proceso llamante deberá esperar a que termine para ejecutarse.
+
+6.- Durante la presentación de señales vimos el procedimiento trap, mencione para que lo podemos utilizar (5 puntos)
+
+	Es utilizado para especificar algún manejador de señales en el Shell.
+
+
+
+7.- ¿Cuál es el comando que se usa desde una terminal para enviar una señal a un proceso? (5 puntos)
+
+kill
+
+
+
+
+ 
+

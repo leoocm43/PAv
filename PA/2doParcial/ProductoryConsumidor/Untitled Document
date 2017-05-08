@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+char* arr[1000];
+int tamanio = ;
+
+void push(char c){
+
+}
+
+void pop(){
+
+}
+
+int main(){
+
+
+}
